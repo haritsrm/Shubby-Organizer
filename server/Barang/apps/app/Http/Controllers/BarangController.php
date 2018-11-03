@@ -1,7 +1,6 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Barang;
 class BarangController extends Controller
 {
     /**
@@ -25,6 +24,7 @@ class BarangController extends Controller
         $barang = new $this->barang;
         $barang->create([
             'name' => $request->name,
+            'id_category' => $request->category,
             'price' => $request->price,
             'desc' => $request->description,
         ]);
@@ -41,6 +41,7 @@ class BarangController extends Controller
         $barang = $this->barang->find($id);
         
         $barang->name = $request->input('name');
+        $barang->id_category = $request->input('category');
         $barang->price = $request->input('price');
         $barang->desc = $request->input('description');
 

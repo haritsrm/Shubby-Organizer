@@ -1,0 +1,24 @@
+version: '2'
+services:
+    webserver:
+      image: haritz4998/docker-lumen:latest
+      container_name: category-management
+      ports: 
+        - 8081:80
+      links: 
+        - db
+      volumes:
+        - ./apps:/var/www/lumen
+
+    db: 
+      image: mariadb:latest
+      container_name: db-category
+      ports:
+        - 3306
+      volumes:
+        - ./databases:/var/lib/mysql
+      environment:
+        - MYSQL_ROOT_PASSWORD=root
+        - MYSQL_USER=harits
+        - MYSQL_PASSWORD=harits
+        - MYSQL_DATABASE=category
