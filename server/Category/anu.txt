@@ -1,0 +1,238 @@
+[
+    {
+        "Id": "92491e4847594b2fb39c3092b5a145de53d8efe17602fe228104ac5ce9892fbf",
+        "Created": "2018-11-04T20:39:22.634746116Z",
+        "Path": "/usr/sbin/apache2ctl",
+        "Args": [
+            "-D",
+            "FOREGROUND"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 12153,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2018-11-04T20:39:25.801376012Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:f49af5b8d158dc5760f60cd319f8370c17bbcbc3500222926b48a693fd184acd",
+        "ResolvConfPath": "/var/lib/docker/containers/92491e4847594b2fb39c3092b5a145de53d8efe17602fe228104ac5ce9892fbf/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/92491e4847594b2fb39c3092b5a145de53d8efe17602fe228104ac5ce9892fbf/hostname",
+        "HostsPath": "/var/lib/docker/containers/92491e4847594b2fb39c3092b5a145de53d8efe17602fe228104ac5ce9892fbf/hosts",
+        "LogPath": "/var/lib/docker/containers/92491e4847594b2fb39c3092b5a145de53d8efe17602fe228104ac5ce9892fbf/92491e4847594b2fb39c3092b5a145de53d8efe17602fe228104ac5ce9892fbf-json.log",
+        "Name": "/barang-management",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/rietzche/Documents/projek/E-Commerce/server/Barang/apps:/var/www/lumen:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "barang_default",
+            "PortBindings": {
+                "80/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [
+                "dockerhost:172.21.0.1",
+                "category-management:172.22.0.1"
+            ],
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/c31741cf496da06cd176ecad39df7550074a3de8f7e793597d0584515beac7e6-init/diff:/var/lib/docker/overlay2/3feed38ba5e7d47fd5b21b865d1992bd74257d6d1093565e89df4b20fdf08f81/diff:/var/lib/docker/overlay2/e711bc16fe2ffe96fff4ac077089358b2c71981f0a3fe83294f89c58b30ca4d0/diff:/var/lib/docker/overlay2/09ff782f8d38979e9c09fc2316006a7fb4cebaa0c5b71da08f3b47dacecbe27b/diff:/var/lib/docker/overlay2/001f68ea0b6c48423f4cabad13d181b0423c5db0096c3e870b11da652111b6f9/diff:/var/lib/docker/overlay2/823bf65960b3b3c5156b5aa17abd76531a751775eb678258c14aa39cf7944eb4/diff:/var/lib/docker/overlay2/db96d56a3955f232623c8b216fb5667c4cc98c71d8323dc67ee80721cadbb603/diff:/var/lib/docker/overlay2/51e838ba1b17934c9fd0cef3c19332ab524177fbad57c688f6c0fd525c88737f/diff:/var/lib/docker/overlay2/adc612930fa1c7e4a99ea1ca444962db4d2e93fa51d36dbf72372896b8995937/diff:/var/lib/docker/overlay2/f435a80a4fbe6f9cfb20b9e13a450ac7c5d516843d04e2f8764fa2ce5952a3e3/diff:/var/lib/docker/overlay2/0a8e3058e5fc37080eaea214ca416e3f9baeb28e64b8334e9a687eaba0b58e05/diff:/var/lib/docker/overlay2/c577546d662064e93ce9267835d16430e21e4548e9acf47bbbadc9127b096575/diff:/var/lib/docker/overlay2/0285ffbdb9174c8b19f841f68c2dba8251b01f25d6cf3148f3f7462a3c46bff7/diff:/var/lib/docker/overlay2/c598260b1a5751300bd5e6a2c174f00e4d2d97003da71454c30d3db5175b03e5/diff:/var/lib/docker/overlay2/3414427e921a2636aca26caf839b6f485735743f125f7c8ae629320c84adf4d1/diff:/var/lib/docker/overlay2/b4e98f9fe00bd3eec2705179554a72eca1c6da5fc8db446aa8b0191cb9abc291/diff:/var/lib/docker/overlay2/c5010c7a2152644a08f298cc26ccedd92b12d341fcc44959aac2d2f7461b5d31/diff:/var/lib/docker/overlay2/b2eefbcfe55c9182882a53a37bdfac23b8c1bed137d04a7d5b297de591c72665/diff:/var/lib/docker/overlay2/694858f186a98be322d30927e01f8171f05c3d82dcb1a984ebc571789c0dfea9/diff:/var/lib/docker/overlay2/7c45f2d823134f6e7727ca42f8af73a5509e517604738f39c1fefdda954e9f3b/diff:/var/lib/docker/overlay2/a55a581ef83ea3aabcbd5f0494a618df2843470dab7a2a6bf5fe4d8546c3918c/diff:/var/lib/docker/overlay2/12f2b2f3f5d90e0c57a1a725fe1d4f53b1caea8effc3ff6f727beab9dbc16569/diff:/var/lib/docker/overlay2/5161c88397314254b186b3606d00d64e8305293a10addcd762bb3a870b325954/diff:/var/lib/docker/overlay2/a2b22822fb40b837bf0a9445956671745fe5338e3c8b745aad69fe789f8b5d38/diff:/var/lib/docker/overlay2/220c9e8c0e1c941fcbc82affe35444cee28f078a64e20bb5d3e354f35004ec9a/diff:/var/lib/docker/overlay2/80320b84b00d190c54c345eccd105d4de3d73687b323f1a58e18c1d2660a80bd/diff:/var/lib/docker/overlay2/ecc181794aa7b2bc4ba53972711368711b5d269ceab909276b3b31ee957901d1/diff:/var/lib/docker/overlay2/b911f3b2c1c99e97416028e5099973b6045842e516520d1acc658b2044aea4f6/diff:/var/lib/docker/overlay2/62afb8c4ba339bf0f85f8ff8c7a0859583c85af18a13569ed322fd9b2330fdc1/diff:/var/lib/docker/overlay2/7b8c086696f8fefd182f13267d0785d029829e8d62e6f1cddc31b8703bd04d82/diff:/var/lib/docker/overlay2/25e3cf480dca46cf59b6014b41bc7960ae5be72ec12aa4bf65a54562c14b5582/diff:/var/lib/docker/overlay2/fe69bfa87b317919d88066368f4ad982bf4e007f41be73cc1b9e74b172fa3c85/diff",
+                "MergedDir": "/var/lib/docker/overlay2/c31741cf496da06cd176ecad39df7550074a3de8f7e793597d0584515beac7e6/merged",
+                "UpperDir": "/var/lib/docker/overlay2/c31741cf496da06cd176ecad39df7550074a3de8f7e793597d0584515beac7e6/diff",
+                "WorkDir": "/var/lib/docker/overlay2/c31741cf496da06cd176ecad39df7550074a3de8f7e793597d0584515beac7e6/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/rietzche/Documents/projek/E-Commerce/server/Barang/apps",
+                "Destination": "/var/www/lumen",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "92491e484759",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "443/tcp": {},
+                "80/tcp": {},
+                "8888/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "APACHE_RUN_USER=application",
+                "APACHE_RUN_GROUP=application",
+                "APACHE_SERVER_NAME=localhost",
+                "APACHE_HTTP_PORT=8888",
+                "GIT_NAME=teste",
+                "GIT_EMAIL=teste@teste.com.br"
+            ],
+            "Cmd": [
+                "/usr/sbin/apache2ctl",
+                "-D",
+                "FOREGROUND"
+            ],
+            "ArgsEscaped": true,
+            "Image": "haritz4998/docker-lumen:latest",
+            "Volumes": {
+                "/var/www/lumen": {}
+            },
+            "WorkingDir": "/home/application",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "17a4812c76830df3e72800b485e015fb4138660426510bac4849a5fe350f0633",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "barang",
+                "com.docker.compose.service": "webserver",
+                "com.docker.compose.version": "1.18.0"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "8de0916d624057cc2063910b16100bb88ac2f1f4c3cde97e4805770aada8df39",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "443/tcp": null,
+                "80/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8080"
+                    }
+                ],
+                "8888/tcp": null
+            },
+            "SandboxKey": "/var/run/docker/netns/8de0916d6240",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "barang_default": {
+                    "IPAMConfig": null,
+                    "Links": [
+                        "db-barang:db",
+                        "db-barang:db-barang"
+                    ],
+                    "Aliases": [
+                        "webserver",
+                        "92491e484759"
+                    ],
+                    "NetworkID": "befb1112a18d0020e1c330b520ec33a422367cd073de5890feccc5d373b55ee8",
+                    "EndpointID": "4ac9a526b14e7391e01f11e7c56500a361670e6a37fe89e9b280c29bd5d65cac",
+                    "Gateway": "172.21.0.1",
+                    "IPAddress": "172.21.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:15:00:03",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]

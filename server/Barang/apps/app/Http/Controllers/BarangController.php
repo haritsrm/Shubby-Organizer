@@ -14,7 +14,7 @@ class BarangController extends Controller
         $this->barang = new BarangService;
     }
 
-    public function index()
+    public function index(Request $request)
     {
         $barangs = $this->barang->browse();
         return response()->json($barangs);
@@ -31,9 +31,14 @@ class BarangController extends Controller
         
         return response()->json('Sukses menambahkan barang!');
     }
-    public function show($id)
+    public function show(Request $request, $id)
     {
+        $client = new \GuzzleHttp\Client();
+        $res = $client->request('GET', 'http://ip.jsontest.com/');
         $barang = $this->barang->find($id);
+        $barang->id_category = [
+            'data' => $res->getBody(),
+        ];
         return response()->json($barang);
     }
     public function update(Request $request, $id)
